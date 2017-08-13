@@ -1,0 +1,160 @@
+
+body {
+  background-color: black;
+  margin: 0;
+  font-family: Helvetica;
+  font-size: 22px;
+  text-align: center;
+  color: seashell;
+}
+
+
+/* Start of Header*/
+
+/* This is the main container for the header, its a flex container, we use the justify content in order to center the content in correct direction in the nav bar. The
+flex-wrap property will make the child elements move down to the next line when the window size is adjusted. */
+.f-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header{
+  align-items: center; /* in order to align items vertically within the contianer we use the align items to center it within the container. */
+  position: fixed;
+  z-index: 1;
+  height: 69px;
+  width: 100%;
+  border-bottom: 1px solid white;
+  background-color: black;
+}
+
+a{
+  color: seashell;
+  opacity: 0.9;
+  text-decoration: underline;
+}
+
+header img{
+  padding-left: 10px;
+  height: 50px;
+}
+
+/* In order to have a the picture seperated to the left side and the nav bar to the right side you simply ned the flex-grow property!! In order to get the correct distance between the navigation links I had to seperate the padding between nav and nav span.
+Not really sure why.*/
+nav {
+  text-align: right;
+  flex-grow: 1;
+  padding-right: 10px;
+}
+
+nav span{
+  display: inline-block;
+  padding-left: 20px;
+}
+
+/*---End of Header---*/
+
+/*maincontainer start --including Tea-month and Locations*/
+div {
+  display: block;
+}
+
+.Maincontainer{
+  padding: 69px;
+  width: 1200px;
+  opacity: 0.9;
+  margin: auto;
+}
+
+#Our-mission{
+  height: 700px;
+  background-image: url("../images/img-mission-background.jpg");
+  background-repeat: no-repeat;
+}
+
+/* By having a margin with the auto value we will center the text over the picture. As thats the main div for the "mission" and the auto margin witha width of 100% will automatically set the text in the middle of the picture*/
+#Our-mission .om-text{
+  margin: auto;
+  width: 100%;
+  background-color: black;
+}
+
+/*End of top header*/
+
+/* Start of Tea of the Month */
+
+#Tea-month{
+  margin: auto;
+  width: 1000px;
+  height: 700px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.Pics img{
+  display: block;
+  height: 200px;
+  width: 300px;
+  margin: 10px;
+}
+
+.Pics{
+  Padding: 5px;
+}
+
+.Pics span{
+  display: block;
+  padding: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*--- End of store --- */
+
+/*--- Start of Locations ---*/
+
+#Locations{
+  background-image: url(../images/img-locations-background.jpg);
+  background-position: top;
+  padding-top: 70px;
+  height: 500px;
+}
+
+#Locations .f-container{
+  margin-left: auto;
+  width: 1200px;
+}
+
+.Locate{
+  flex-basis: 300px;
+  background-color: black;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px 20px;
+}
+
+p{
+  display: block;
+}
+
+/*End Locations*/
+
+/*start contact*/
+#contact{
+  height: 200px;
+}
+/*end contact*/
+
+/*start copy*/
+footer{
+  text-align: left;
+  padding-left: 20px;
+}
+
+footer h5{
+  font-weight: bold;
+}
+/*end copy*/
